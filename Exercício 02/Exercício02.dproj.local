@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/12/08 15:13:50.383,=D:\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/12/08 15:17:00.263,D:\Testes\Sancri\Exercício 02\uPrincipal.dfm=D:\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2021/12/08 15:17:00.263,D:\Testes\Sancri\Exercício 02\uPrincipal.pas=D:\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/12/08 15:17:13.722,D:\Testes\Sancri\Exercício 02\Exercício02.dproj=D:\Projeto\Project1.dproj</Transaction>
+    <Transaction>2021/12/08 15:18:38.618,=D:\Testes\Sancri\Exercício 02\Unit1.pas</Transaction>
+    <Transaction>2021/12/08 15:20:19.341,D:\Testes\Sancri\Exercício 02\uBuscarInserir.pas=D:\Testes\Sancri\Exercício 02\Unit1.pas</Transaction>
+    <Transaction>2021/12/08 15:20:19.341,D:\Testes\Sancri\Exercício 02\uBuscarInserir.dfm=D:\Testes\Sancri\Exercício 02\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,14 @@
+program Exercício03;
+
+uses
+  Vcl.Forms,
+  uPrincipal in 'D:\Projeto\uPrincipal.pas' {frmPrincipal};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.Run;
+end.

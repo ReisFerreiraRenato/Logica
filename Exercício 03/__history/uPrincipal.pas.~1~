@@ -1,0 +1,68 @@
+unit uPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmPrincipal = class(TForm)
+    edConjunto1: TEdit;
+    edConjunto2: TEdit;
+    edResultado: TEdit;
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+    procedure Intercalar(prmConjunto1, prmConjunto2: String);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPrincipal.Button1Click(Sender: TObject);
+begin
+  if edConjunto1.Text = '' then
+  begin
+    ShowMessage('Favor digitar o primeiro conjunto');
+    edConjunto1.SetFocus();
+    Exit();
+  end;
+
+  if edConjunto2.Text = '' then
+  begin
+    ShowMessage('Favor digitar o segundo conjunto');
+    edConjunto2.SetFocus();
+    Exit();
+  end;
+  Intercalar(edConjunto1.Text, edConjunto2.Text);
+end;
+
+procedure TfrmPrincipal.Intercalar(prmConjunto1, prmConjunto2: String);
+var
+  QtdNumeros, QtdOutrosCaracteres, Tam1, Tam2, TamTotal,
+  ContTotal, Cont1, Cont2: Integer;
+begin
+  Tam1 := prmConjunto1.Length;
+  Tam2 := prmConjunto2.Length;
+  TamTotal := Tam1 + Tam2;
+  cont1:= 1;
+  cont2:= 1;
+
+
+  for ContTotal := 1 to TamTotal do
+  begin
+
+
+  end;
+end;
+
+end.

@@ -1,0 +1,53 @@
+unit uBuscarInserir;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmBuscarInserir = class(TForm)
+    Panel1: TPanel;
+    Button1: TButton;
+    Button2: TButton;
+    edFrase: TEdit;
+    lblFrase: TLabel;
+    procedure FormShow(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    pbcFrase: String;
+    pbcArrayFrases: TArray<String>;
+    pbcBuscarInserir: Char; //B Busca I Inserir;
+  end;
+
+var
+  frmBuscarInserir: TfrmBuscarInserir;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmBuscarInserir.Button2Click(Sender: TObject);
+begin
+  pbcFrase := '';
+  Close();
+end;
+
+procedure TfrmBuscarInserir.FormShow(Sender: TObject);
+begin
+  if pbcBuscarInserir = 'I' then
+  begin
+    frmBuscarInserir.Caption := 'Inserir Frase';
+  end
+  else
+  begin
+    frmBuscarInserir.Caption := 'Buscar Frase';
+  end;
+  edFrase.SetFocus();
+end;
+
+end.
